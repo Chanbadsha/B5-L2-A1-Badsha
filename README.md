@@ -39,3 +39,22 @@ type User = {
 | 4. Extending/Inheritance         | ✅ `extends`        | ✅ Intersection    |
 | 5. Declaration merging           | ✅ Yes              | ❌ No              |
 | 6. Implementable in classes      | ✅ Yes              | ✅ Yes             |
+
+
+
+ ## When Should You Use Each?
+### Use interface when:
+
+| You're defining object structures.
+
+You want declaration merging or extending interfaces.
+
+You’re working with class-based OOP.
+
+Use type when:
+
+You need to define unions, primitives, or tuples.
+
+You want to compose multiple types.
+
+You’re using utility types or creating more complex types.
