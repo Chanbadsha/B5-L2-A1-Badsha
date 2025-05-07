@@ -8,7 +8,8 @@ There are
 ## What Is an Interface?
 An interface defines the shape of an object. It's great for describing classes, function contracts, and object structures
 
-```interface User {
+```  Example
+interface User {
   name: string;
   age: number;
 }
