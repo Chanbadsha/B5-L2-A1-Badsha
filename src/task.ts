@@ -1,8 +1,17 @@
-function formatString(input: string, toUpper?: boolean) {
-if (toUpper == false) {
-    return input.toLowerCase()
-} else{
-    return input.toUpperCase()
-}
+function formatString(input: string, toUpper?: boolean): string {
+    if (toUpper == false) {
+        return input.toLowerCase()
+    } else {
+        return input.toUpperCase()
+    }
 }
 
+// function filterByRating(items: { title: string; rating: number }[]): { title: string; rating: number }[]
+
+type productListType = {
+    title: string,
+    rating: number,
+}
+function filterByRating(items: productListType[]): productListType[] {
+    return items.filter(item => (item.rating >= 4))
+}
