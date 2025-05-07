@@ -30,10 +30,12 @@ type User = {
 
 
 ## Key Differences Between Interface and Type
-### Feature	                                    interface	              type
-1. Used for object shape	       ✅ Yes	            ✅ Yes
-2. Supports union types	           ❌ No	                ✅ Yes 
-3. Can define tuples/primitives    ❌ No	                ✅ Yes 
-4. Extending/Inheritance    	   ✅ extends      	    ✅ Intersection 
-5. Declaration merging	           ✅ Yes           	    ❌ No 
-6. Implementable in classes	       ✅ Yes                ✅ Yes
+
+| Feature                          | `interface`         | `type`             |
+|----------------------------------|---------------------|--------------------|
+| 1. Used for object shape         | ✅ Yes              | ✅ Yes             |
+| 2. Supports union types          | ❌ No               | ✅ Yes             |
+| 3. Can define tuples/primitives  | ❌ No               | ✅ Yes             |
+| 4. Extending/Inheritance         | ✅ `extends`        | ✅ Intersection    |
+| 5. Declaration merging           | ✅ Yes              | ❌ No              |
+| 6. Implementable in classes      | ✅ Yes              | ✅ Yes             |
