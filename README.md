@@ -1,1 +1,1 @@
-hi
+What is the difference between interface and type in TypeScript ?

@@ -6,16 +6,9 @@ function formatString(input: string, toUpper?: boolean): string {
     }
 }
 
-
-
-type productListType = {
-    title: string,
-    rating: number,
-}
-function filterByRating(items: productListType[]): productListType[] {
+function filterByRating(items: { title: string; rating: number }[]): { title: string; rating: number }[] {
     return items.filter(item => (item.rating >= 4))
 }
-
 
 
 function concatenateArrays<T>(...arrays: T[][]): T[] {
@@ -72,9 +65,6 @@ function getMostExpensiveProduct(products: Product[]): Product | null {
         return products.reduce((max, product) => product.price > max.price ? product : max)
     }
 }
-
-
-
 
 
 
