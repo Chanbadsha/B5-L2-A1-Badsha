@@ -58,3 +58,9 @@ type User = {
 2. You want to compose multiple types.
 
 3. You’re using utility types or creating more complex types.
+
+
+# Final Thoughts
+Both interface and type are tools to help you write better, more maintainable TypeScript code. The differences are mostly stylistic and syntactic, but in larger codebases, choosing the right one can lead to cleaner and more scalable architecture
+
+
