@@ -45,16 +45,16 @@ type User = {
  ## When Should You Use Each?
 ### Use interface when:
 
-| You're defining object structures.
+1. You're defining object structures.
 
-You want declaration merging or extending interfaces.
+2. You want declaration merging or extending interfaces.
 
-You’re working with class-based OOP.
+3. You’re working with class-based OOP.
 
-Use type when:
+### Use type when:
 
-You need to define unions, primitives, or tuples.
+1. You need to define unions, primitives, or tuples.
 
-You want to compose multiple types.
+2. You want to compose multiple types.
 
-You’re using utility types or creating more complex types.
+3. You’re using utility types or creating more complex types.
