@@ -33,10 +33,7 @@ class Vehicle {
         this.year = year
     }
     getInfo() {
-        return ({
-            "Make": this.make,
-            "Year": this.year
-        })
+        return (`Make: ${this.make}, Year: ${this.year}`)
     }
 }
 
@@ -48,12 +45,10 @@ class Car extends Vehicle {
         this.model = model
     }
     getModel() {
-        return ({ "Model": this.model })
+        return (`Model: ${this.model}`)
     }
 
 }
-
-
 
 function processValue(value: string | number): number {
     if (typeof value == "string") {
@@ -94,7 +89,7 @@ enum Day {
   }
   
   function getDayType(day: Day): string{
-    if (day === Day?.Sunday) {
+    if (day === Day.Saturday || day === Day.Sunday) {
         return "Weekend"
     }
     else{
