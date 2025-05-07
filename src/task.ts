@@ -57,7 +57,7 @@ class Car extends Vehicle {
 
 function processValue(value: string | number): number {
     if (typeof value == "string") {
-        return (value.length)
+        return (value?.length)
     } else {
         return (value * 2)
     }
@@ -71,7 +71,7 @@ interface Product {
 }
 
 function getMostExpensiveProduct(products: Product[]): Product | null {
-    if (products.length < 1) {
+    if (products?.length < 1) {
         return null
     } else {
         return products.reduce((max, product) => product.price > max.price ? product : max)
@@ -94,7 +94,7 @@ enum Day {
   }
   
   function getDayType(day: Day): string{
-    if (day === Day.Sunday) {
+    if (day === Day?.Sunday) {
         return "Weekend"
     }
     else{
@@ -104,4 +104,17 @@ enum Day {
 
 
 
+
+  async function squareAsync(n: number): Promise<number>{
+    return new Promise((resolve, reject)=>{
+        setTimeout(() => {
+           if (n<0) {
+            reject(new Error("Number must be non-negative"))
+           }
+           else{
+            resolve(n * n)
+           }
+        }, 1000);
+    })
+  }
 
