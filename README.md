@@ -30,7 +30,7 @@ type User = {
 
 
 ## Key Differences Between Interface and Type
-### Feature	                      interface	              type
+### Feature	                                    interface	              type
 1. Used for object shape	       ✅ Yes	            ✅ Yes
 2. Supports union types	           ❌ No	                ✅ Yes 
 3. Can define tuples/primitives    ❌ No	                ✅ Yes 
