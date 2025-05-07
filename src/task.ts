@@ -33,7 +33,7 @@ class Vehicle {
         this.year = year
     }
     getInfo() {
-        console.log({
+        return ({
             "Make": this.make,
             "Year": this.year
         })
@@ -48,10 +48,17 @@ class Car extends Vehicle {
         this.model = model
     }
     getModel() {
-        console.log({ "Model": this.model })
+        return ({ "Model": this.model })
     }
 
 }
 
 
 
+function processValue(value: string | number): number {
+    if (typeof value == "string") {
+        return (value.length)
+    } else {
+        return (value * 2)
+    }
+}
