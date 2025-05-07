@@ -14,3 +14,15 @@ interface User {
   name: string;
   age: number;
 }
+```
+
+## What Is a Type Alias?
+A type can describe everything an interface can — plus more. It can represent objects, primitives, unions, tuples, and intersections.
+
+### Example
+``` 
+type User = {
+  name: string;
+  age: number;
+};
+```
