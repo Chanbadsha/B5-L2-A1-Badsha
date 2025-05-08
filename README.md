@@ -64,3 +64,19 @@ type User = {
 Both interface and type are tools to help you write better, more maintainable TypeScript code. The differences are mostly stylistic and syntactic, but in larger codebases, choosing the right one can lead to cleaner and more scalable architecture
 
 
+
+## Blog 2
+
+# The keyof keyword use in TypeScript
+The keyof keyword in TypeScript is a type operator that returns a union of all property names keys of a given type as string or number literals.
+
+### Use Case of keyof
+It is mainly used for:
+1. Creating types that are constrained to the keys of another type.
+2. Building generic utility types.
+3. Ensuring type-safe property access.
+
+### Syntax
+| ts  |
+```
+keyof Type
