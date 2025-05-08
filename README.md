@@ -78,7 +78,5 @@ It is mainly used for:
 
 ### Syntax
 
-``` 
-| Feature |
-|---------|
+```ts
 keyof Type
