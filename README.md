@@ -115,5 +115,8 @@ type OnlyName = Pick<Person, "name">;
 |--------------------------|------------------------------------------|
 | 1. Used for object shape | Extracts keys of an object type          |
 | 2. Returns               | A union of string/number literal types   |
-| 3. Used with	           | Generics, Pick, Record, in mappings      |
+| 3. Used with	           | `Generics`, `Pick`, `Record`, in mappings      |
 | 4. Benefits	             | Type safety, better tooling, fewer bugs  |
+
+
+Pro Tip: Use keyof when building utilities that need to work dynamically with object types. It keeps your code flexible but safe.
