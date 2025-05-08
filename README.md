@@ -77,6 +77,6 @@ It is mainly used for:
 3. Ensuring type-safe property access.
 
 ### Syntax
-| ts  |
-```
+
+``` ts
 keyof Type
