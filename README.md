@@ -86,3 +86,34 @@ const user = { name: "Alice", age: 25 };
 const name = getProperty(user, "name"); // ✅ OK
 const email = getProperty(user, "email"); // ❌ Error if 'email' is not a key
 ````
+Now PersonKeys is a union type of all the keys in Person.
+
+## Why is keyof Useful?
+
+### 1. Type-Safe Key Access
+Let’s say you want to write a utility function to get a value from an object by its key. You want to make sure only valid keys are allowed.
+````
+function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+  return obj[key];
+}
+
+const user = { name: "Alice", age: 25 };
+
+const name = getProperty(user, "name"); // ✅ OK
+const email = getProperty(user, "email"); // ❌ Error if 'email' is not a key
+````
+### 2. Building Generic Utilities
+You can combine keyof with other type utilities like Pick, Record, and conditional types to build reusable and flexible logic.
+````
+type OnlyName = Pick<Person, "name">;
+// Result: { name: string }
+````
+
+### Summary
+
+| Feature                  | Description                              |
+|--------------------------|------------------------------------------|
+| 1. Used for object shape | Extracts keys of an object type          |
+| 2. Returns               | A union of string/number literal types   |
+| 3. Used with	           | Generics, Pick, Record, in mappings      |
+| 4. Benefits	             | Type safety, better tooling, fewer bugs  |
